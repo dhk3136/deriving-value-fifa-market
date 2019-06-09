@@ -55,6 +55,6 @@ So, to answer my question, the answer is no. While the player overall rating is 
 
 My next steps? If I were to continue with this project, I'd pick a dataset that contains all aggregate values rather than a rating system. The rating system across the categories has too much influence on the outcome without knowing the metrics under FIFA's hood. I would also extend the analysis with a series of hypothesis tests toward making actual, rather than speculative or exploratory predictions. That said, I will also look to other potential projects that might extend my skill set through application; this is one of my takeaways--I learned a lot and at a faster rate when using tools we've learned in an applied context.
 
-References:
+References:  
 [Nielsen World Football Report](https://www.nielsen.com/uk/en/insights/reports/2018/world-football-report.html)  
 [Sofifa](https://sofifa.com/)
