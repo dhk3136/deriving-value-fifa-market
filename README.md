@@ -4,8 +4,8 @@ Soccer, by a large margin, is the most popular sport in the world. In Nielsen's 
 
 Consequently, club teams can afford outrageous sums of money to spend on single players. Often, they are not looking for the best value or effective combinations of players--but instead, the best players and coaches evaluated on an individual metric. Consider, for example, that during a single transfer window (the time alloted for clubs to make trades or "buy" players), Paris St-Germain broke a record for money spent on a single player, and then proceeded to break that record with their next purchase.
 
-## Question
-Is the relationship between a player's ability and his market value normally distributed?
+## Motivating Question
+Is there a relationship between a player's ability and his market value, and if so, how is that relationship distributed?
 
 ## Data  
 I used a dataset consisting of 89 column features including on and off-field statistics (e.g., wage, short passing) and 18702 labels representing FIFA's list of current professional soccer players, worldwide. The data was web-scraped from the website Sofifa which rates and provides values for current soccer players.
