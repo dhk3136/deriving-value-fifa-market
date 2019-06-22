@@ -10,11 +10,12 @@ Is there a relationship between a player's ability and his market value, and if 
 ## Data  
 I used a dataset consisting of 89 column features including on and off-field statistics (e.g., wage, short passing) and 18702 labels representing FIFA's list of current professional soccer players, worldwide. The data was web-scraped from the website Sofifa which rates and provides values for current soccer players.
 
-### Cleaning, organizing, and interpreting the dataset was by far my most time-consuming and challenging endeavour for a number of reasons: 
+### Cleaning, Organizing, and Feature Engineering
+Scrubbing, interpreting, validating, and re-interpreting the dataset was by far my most time-consuming and challenging endeavour for a number of reasons: 
 - the dataset was web-scraped which meant there could be reliability issues; as such, I did a lot of validating and spot-checking using multiple sources when there appeared to be an outlier, a player at a wrong club (clubs didn't play a role in my EDA but scared me into thinking there might be other mistaken values associated with the player)
 - when a Pandas function or plotting attempt threw an error, I first tried to use built-in methods; more often than not, I ended up searching for problems manually. For example, some columns had a '+' (and sometimes an additional value) next to the original value which I could not reliably interpret. This lack of consistency cost more time than it did to remove or fix the problem
 - the FIFA rating system for some categories were confounding because of their internal metrics which are not transparent to the public. Most of the time, those values were consistent, but their (lack of) interpretibility at times made it difficult to trust so I had to examine each of the 89 columns to ensure I understood what the values were actually representing; if I was unsure, I had no choice but to drop the column. For example, a value for 'Potential' could mean a forecast for the coming season or over the player's lifetime--or neither. As I was interested in rating vs value, I could only rely on the current stats of a player. If I knew more, I think 'Potential' could have been informative to value
-- conversion of monetary value in abbreviated form, e.g., '55.3M', '353K' in Euros over 18702 rows doesn't lend itself well to doing even simple arithemetic in Python
+- trivial fixes: e.g., feature engineering of monetary value in highly inconsistent and abbreviated form ('55.3M', '0' in Euros) over 18702 rows doesn't lend itself well to doing simple arithemetic in Python
 
 ### Plotting
 I used this capstone as an opportunity to try different plotting libraries. I'm not sure this was wise given the tight timeframe of the project. First, I tried Altair/Vega about which I read complimentary things. That ended quickly, as I had rendering issues. By that, I mean I saw nothing--literally nothing. No errors, no plot. Then I tried Plotly which produced great looking plots, but depending on which kind of plot, and if I was using a notebook, or if I wanted to save plots online/offline, or to even use it at all offline without an account... it could have wasted a lot of my time. And it did. All you need to know is that I had seven different import statements just to get it going. It was fun to see interactive Javascript with the plots--but not fun enough. I managed to get a couple of useful plots out of the effort, but for the rest I used Seaborn.
@@ -33,7 +34,7 @@ The first thing I noted was that the two distributions from my question, Market 
 
 Surprisingly... normal
 
-Now, here's a plot showing both Rating and Value that shows what happens to that normal distribution when it encounters some serious left skew.
+Now, here's a plot showing both Rating and Value that shows what happens to that normal distribution when it encounters substantial left skew.
 
 ![alt text](images/ranking_vs_value.png)
 
