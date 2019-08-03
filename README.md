@@ -1,4 +1,4 @@
-## Deriving Value from "The Beautiful Game": An Exploratory Data Analysis
+## Deriving Value from "The Beautiful Game": An EDA Addressing Optimal Price Points for Marketable FIFA players
 
 Soccer, by a large margin, is the most popular sport in the world. In Nielsen's annual "World Football Report," a survey of major markets across the Americas, Europe, the Middle East and Asia, not only shows the sport's vast popularity, but that it's still on the rise. Notably, China and the United States, the world's two largest economies, are contributing to the sport's following--albeit at a far slower rate than its counterparts across the globe. At more than 40% of interest worldwide, soccer--or football--is well ahead of its nearest rival sports (basketball weighs in at No. 2).
 
