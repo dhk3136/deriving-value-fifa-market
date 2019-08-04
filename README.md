@@ -17,9 +17,9 @@ Here's one answer. Look to the data:
 
  - Scour and scale a variety of distributions to pinpoint otherwise hidden pockets of real player talent costing far less than the name brands.  
  - Apply creativity toward predictive models and methods to investigate why those prices are substantially lower
-  - time-series analysis, latent feature models, ensemble methods  
+   - time-series analysis, latent feature models, ensemble methods  
 
-If those reasons are good enough for a compromise, a club can optimize on value vs rating as a solid strategy to rebuild its starting XI.  
+Ample opportunity may well exist for a smart club, backed by rigorous, data-driven analyses to optimize on value vs rating as a solid strategy to rebuild its starting XI.  
 
 ## Motivating Question
 Is there a linear relationship between a player's ability and market value, and if so, is that relationship evenly distributed?
