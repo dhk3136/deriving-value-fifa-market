@@ -1,9 +1,9 @@
-## Deriving Value from "The Beautiful Game":  
-### An EDA Addressing Optimal Price Points for Marketable FIFA players  
+# Deriving Value from "The Beautiful Game":  
+## An EDA Addressing Optimal Price Points for Marketable FIFA players  
 
 ![alt text](images/pep_on_outlandish_transfer_fees.jpg)  
 
-## "Background"  
+## Background  
 Soccer, by a large margin, remains the most popular sport in the world. Nielsen's annual "World Football Report," a survey of major markets across the Americas, Europe, the Middle East and Asia, not only shows the sport's vast popularity, but that its growth is still on the rise. Notably, China and the United States, the world's two largest economies, are contributing to the sport's following--albeit at a far slower rate than its counterparts across the globe. At more than 40% of interest worldwide, soccer--or football--is well ahead of its nearest rival sports (to my surprise, basketball weighs in at No. 2).
 
 Consequently, club teams can afford outrageous sums of money to spend on single players. Often, they are not looking for the best value or effective combinations of players--but instead, the best players and coaches evaluated on an individual metric. Consider, for example, that during a single transfer window (the time alloted for clubs to make trades or "buy" players), Paris St-Germain broke a record for money spent on a single player, and then proceeded to break that record with their next purchase.  
@@ -11,10 +11,14 @@ Consequently, club teams can afford outrageous sums of money to spend on single 
 This unprecedented spending spree by the wealthiest clubs has been under scrutiny for several years now, with coaches and fans alike wondering when stronger regulations will be enacted.
 
 ## "Unsustainable"  
-Meanwhile, 'average' clubs with considerably smaller budgets cannot get anywhere near star players attached to star prices. What to do? Here's one answer: look to the data. Find crevices of real player talent costing far less than the name brands. Work rigorously through the data to investigate why those prices are substantially lower. If those reasons are good enough for a compromise, a club can optimize on value vs rating as a solid strategy to rebuild its starting XI.  
+Meanwhile, 'average' clubs with considerably smaller budgets cannot get anywhere near star players attached to star prices. What to do?  
+Here's one answer: look to the data:  
+ - Locate small pockets of real player talent costing far less than the name brands.  
+ - Work rigorously through the data to investigate why those prices are substantially lower (e.g., conduct a time-series analysis).  
+If those reasons are good enough for a compromise, a club can optimize on value vs rating as a solid strategy to rebuild its starting XI.  
 
 ## Motivating Question
-Is there a relationship between a player's ability and his market value, and if so, how is that relationship distributed?
+Is there a linear relationship between a player's ability and his market value, and if so, is that relationship evenly distributed?
 
 ## Data  
 I used a dataset consisting of 89 column features including on and off-field statistics (e.g., wage, passing) and 18702 labels representing FIFA's list of current professional soccer players, worldwide. The data was web-scraped from the website Sofifa which rates and provides values for current soccer players.
@@ -51,19 +55,25 @@ Now all of those nicely distributed rating values have aggregated to the right s
 
 Let's look at a few of the relationships:  
 
-![alt text](images/pair_plot.png)  
+![alt text](images/pair_plot.png)  <br>
 
 And here's a wider view. This heatmap, while packed with features, perhaps is the most informative plot in terms of a player's 'real' value versus skill set.  
 
 ![alt text](images/heatmap.png)
 
-## Conclusion:
+## Preliminary Conclusion
 
 The correlation between value/rating is a surprising (to me) 0.63. The long, left, and flat tail provides much of the correlative relationship despite the sharp, upward spike in value.
 
-So, to answer my question, the answer is no. While the player overall rating is normally distributed, its counterpart, player value is not. The correlation shows a positive relationship but mitigating factors such as the proportion of that correlation does not mean there isn't room for a manager to leverage player value with respect to talent. A level of 80 (near the crook of the elbow in the distribution), is a good threshold for high talent. The mean value at 80 is 14,998,195, and with a max value of 26,085,000, also at a talent level of 80, there are many players to consider within that range for managers within the coming transfer window this summer.
+So, to answer my question, the answer is no. While the player overall rating is normally distributed, its counterpart, player value, is not. The correlation shows a positive relationship but mitigating factors such as the proportion of that correlation does not mean there isn't room for a manager to leverage player value with respect to talent. A level of 80 (near the crook of the elbow in the distribution), is a good threshold for high talent. The mean value at 80 is 14,998,195, and with a max value of 26,085,000, also at a talent level of 80, there are many players to consider within that range for managers within future transfer windows.  
 
-My next steps? If I were to continue with this project, I'd pick a dataset that contains all aggregate values rather than a rating system. The rating system across the categories has too much influence on the outcome without knowing the metrics under FIFA's hood. I would also extend the analysis with a series of hypothesis tests toward making actual, rather than speculative or exploratory predictions. That said, I will also look to other potential projects that might extend my skill set through application; this is one of my takeaways--I learned a lot and at a faster rate when using tools we've learned in an applied context.
+## Next Steps  
+Although my goal for this project was solely to conduct a preliminary analysis via an EDA, here are some steps I'd recommend for continuing this work.  
+ - A time-series analysis would be my first priority; it has high potential to reveal new features unavailable from a 'snapshot' perspective, and thus informing a manager's decision to take risks if inconsistencies in play are the cause of lower player prices. 
+ - Methods such as Latent Dirochlet Analysis (LDA) could very well identify otherwise 'hidden' features.
+ - Creating a list or plot of feature importances could additionally improve opportunities for robust feature engineering.  
+ - Contain data leakage. I'd scour for additional data containing aggregate values rather than a rating system. The use of rating system data across features is risky without knowing the initial metrics under FIFA's hood. 
+
 
 References:  
 [Nielsen World Football Report](https://www.nielsen.com/uk/en/insights/reports/2018/world-football-report.html)  
