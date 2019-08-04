@@ -1,5 +1,5 @@
 # Deriving Value from "The Beautiful Game":  
-## An EDA Addressing Optimal Price Points for Marketable FIFA players  
+## An EDA Addressing Optimal Pricing for Marketable FIFA players  
 
 ![alt text](images/pep_on_outlandish_transfer_fees.jpg)  
 
@@ -15,13 +15,14 @@ Meanwhile, 'average' clubs with considerably smaller budgets cannot get anywhere
 
 Here's one answer. Look to the data:  
 
- - Locate small pockets of real player talent costing far less than the name brands.  
- - Work rigorously through the data to investigate why those prices are substantially lower (e.g., conduct a time-series analysis).  
+ - Scour and scale a variety of distributions to pinpoint otherwise hidden pockets of real player talent costing far less than the name brands.  
+ - Apply creativity toward predictive models and methods to investigate why those prices are substantially lower
+  - time-series analysis, latent feature models, ensemble methods  
 
 If those reasons are good enough for a compromise, a club can optimize on value vs rating as a solid strategy to rebuild its starting XI.  
 
 ## Motivating Question
-Is there a linear relationship between a player's ability and his market value, and if so, is that relationship evenly distributed?
+Is there a linear relationship between a player's ability and market value, and if so, is that relationship evenly distributed?
 
 ## Data  
 I used a dataset consisting of 89 column features including on and off-field statistics (e.g., wage, passing) and 18702 labels representing FIFA's list of current professional soccer players, worldwide. The data was web-scraped from the website Sofifa which rates and provides values for current soccer players.
