@@ -12,9 +12,11 @@ This unprecedented spending spree by the wealthiest clubs has been under scrutin
 
 ## "Unsustainable"  
 Meanwhile, 'average' clubs with considerably smaller budgets cannot get anywhere near star players attached to star prices. What to do?  
-Here's one answer: look to the data:  
+Here's one answer. Look to the data:  
+
  - Locate small pockets of real player talent costing far less than the name brands.  
  - Work rigorously through the data to investigate why those prices are substantially lower (e.g., conduct a time-series analysis).  
+
 If those reasons are good enough for a compromise, a club can optimize on value vs rating as a solid strategy to rebuild its starting XI.  
 
 ## Motivating Question
@@ -55,8 +57,8 @@ Now all of those nicely distributed rating values have aggregated to the right s
 
 Let's look at a few of the relationships:  
 
-![alt text](images/pair_plot.png)  <br>
-
+![alt text](images/pair_plot.png)
+<br>
 And here's a wider view. This heatmap, while packed with features, perhaps is the most informative plot in terms of a player's 'real' value versus skill set.  
 
 ![alt text](images/heatmap.png)
@@ -78,5 +80,5 @@ Although my goal for this project was solely to conduct a preliminary analysis v
 References:  
 [Nielsen World Football Report](https://www.nielsen.com/uk/en/insights/reports/2018/world-football-report.html)  
 [Sofifa](https://sofifa.com/)  
-Lead image labeled for non-commercial reuse  
+*image labeled for non-commercial reuse  
 
