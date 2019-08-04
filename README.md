@@ -1,15 +1,23 @@
 ## Deriving Value from "The Beautiful Game":  
-### An EDA Addressing Optimal Price Points for Marketable FIFA players
+### An EDA Addressing Optimal Price Points for Marketable FIFA players  
 
-Soccer, by a large margin, is the most popular sport in the world. In Nielsen's annual "World Football Report," a survey of major markets across the Americas, Europe, the Middle East and Asia, not only shows the sport's vast popularity, but that it's still on the rise. Notably, China and the United States, the world's two largest economies, are contributing to the sport's following--albeit at a far slower rate than its counterparts across the globe. At more than 40% of interest worldwide, soccer--or football--is well ahead of its nearest rival sports (basketball weighs in at No. 2).
+![alt text](images/pep_on_outlandish_transfer_fees.jpg)  
 
-Consequently, club teams can afford outrageous sums of money to spend on single players. Often, they are not looking for the best value or effective combinations of players--but instead, the best players and coaches evaluated on an individual metric. Consider, for example, that during a single transfer window (the time alloted for clubs to make trades or "buy" players), Paris St-Germain broke a record for money spent on a single player, and then proceeded to break that record with their next purchase.
+## "Background"  
+Soccer, by a large margin, remains the most popular sport in the world. Nielsen's annual "World Football Report," a survey of major markets across the Americas, Europe, the Middle East and Asia, not only shows the sport's vast popularity, but that its growth is still on the rise. Notably, China and the United States, the world's two largest economies, are contributing to the sport's following--albeit at a far slower rate than its counterparts across the globe. At more than 40% of interest worldwide, soccer--or football--is well ahead of its nearest rival sports (to my surprise, basketball weighs in at No. 2).
+
+Consequently, club teams can afford outrageous sums of money to spend on single players. Often, they are not looking for the best value or effective combinations of players--but instead, the best players and coaches evaluated on an individual metric. Consider, for example, that during a single transfer window (the time alloted for clubs to make trades or "buy" players), Paris St-Germain broke a record for money spent on a single player, and then proceeded to break that record with their next purchase.  
+
+This unprecedented spending spree by the wealthiest clubs has been under scrutiny for several years now, with coaches and fans alike wondering when stronger regulations will be enacted.
+
+## "Unsustainable"  
+Meanwhile, 'average' clubs with considerably smaller budgets cannot get anywhere near star players attached to star prices. What to do? Here's one answer: look to the data. Find crevices of real player talent costing far less than the name brands. Work rigorously through the data to investigate why those prices are substantially lower. If those reasons are good enough for a compromise, a club can optimize on value vs rating as a solid strategy to rebuild its starting XI.  
 
 ## Motivating Question
 Is there a relationship between a player's ability and his market value, and if so, how is that relationship distributed?
 
 ## Data  
-I used a dataset consisting of 89 column features including on and off-field statistics (e.g., wage, short passing) and 18702 labels representing FIFA's list of current professional soccer players, worldwide. The data was web-scraped from the website Sofifa which rates and provides values for current soccer players.
+I used a dataset consisting of 89 column features including on and off-field statistics (e.g., wage, passing) and 18702 labels representing FIFA's list of current professional soccer players, worldwide. The data was web-scraped from the website Sofifa which rates and provides values for current soccer players.
 
 ### Cleaning, Organizing, and Feature Engineering
 Scrubbing, interpreting, validating, and re-interpreting the dataset was by far my most time-consuming and challenging endeavour for a number of reasons: 
@@ -28,24 +36,24 @@ I used this capstone as an opportunity to try different plotting libraries. I'm 
 - I conclude by discussing the range of Market Values along a single axis of Player Rating
 
 ---
-The first thing I noted was that the two distributions from my question, Market Value and Player Rating, were vastly different. While Player Rating held a very symmetric, normal distribution, Market Value was skewed toward the extreme right side (the expensive side).
+The first thing I noted was that the two distributions from my question, Market Value and Player Rating, were vastly different. While Player Rating held a very symmetric, normal distribution, Market Value was skewed toward the extreme right side (the expensive side).  
 
 
-![alt text](images/overall_rating.png)
+![alt text](images/overall_rating.png)  
 
-Surprisingly... normal
+Surprisingly... normal  
 
-Now, here's a plot showing both Rating and Value that shows what happens to that normal distribution when it encounters substantial left skew.
+Now, here's a plot showing both Rating and Value that shows what happens to that normal distribution when it encounters substantial left skew.  
 
-![alt text](images/ranking_vs_value.png)
+![alt text](images/ranking_vs_value.png)  
 
-Now all of those nicely distributed rating values have aggregated to the right side. This suggests that 1) a good player with a reasonably high rating (i.e., 80) will most likely be paid less than his counterparts in terms of the value/rating relationship even if that other player's rating is only a few points higher; 2) there are a lot of player within a sweet spot who have the same rating as another with a much higher price.
+Now all of those nicely distributed rating values have aggregated to the right side. This suggests that 1) a good player with a reasonably high rating (i.e., 80) will most likely be paid less than his counterparts in terms of the value/rating relationship even if that other player's rating is only a few points higher; 2) there exists a trove of players within a similar skill scope commensurate with other players bought at a considerably higher--and sub-optimal--price.  
 
-Let's look at a few of the relationships:
+Let's look at a few of the relationships:  
 
-![alt text](images/pair_plot.png)
+![alt text](images/pair_plot.png)  
 
-And here's a wider view:
+And here's a wider view. This heatmap, while packed with features, perhaps is the most informative plot in terms of a player's 'real' value versus skill set.  
 
 ![alt text](images/heatmap.png)
 
@@ -59,4 +67,6 @@ My next steps? If I were to continue with this project, I'd pick a dataset that 
 
 References:  
 [Nielsen World Football Report](https://www.nielsen.com/uk/en/insights/reports/2018/world-football-report.html)  
-[Sofifa](https://sofifa.com/)
+[Sofifa](https://sofifa.com/)  
+Lead image labeled for non-commercial reuse  
+
