@@ -12,6 +12,7 @@ This unprecedented spending spree by the wealthiest clubs has been under scrutin
 
 ## "Unsustainable"  
 Meanwhile, 'average' clubs with considerably smaller budgets cannot get anywhere near star players attached to star prices. What to do?  
+
 Here's one answer. Look to the data:  
 
  - Locate small pockets of real player talent costing far less than the name brands.  
@@ -57,8 +58,9 @@ Now all of those nicely distributed rating values have aggregated to the right s
 
 Let's look at a few of the relationships:  
 
-![alt text](images/pair_plot.png)
-<br>
+![alt text](images/pair_plot.png)  
+
+
 And here's a wider view. This heatmap, while packed with features, perhaps is the most informative plot in terms of a player's 'real' value versus skill set.  
 
 ![alt text](images/heatmap.png)
@@ -74,8 +76,8 @@ Although my goal for this project was solely to conduct a preliminary analysis v
  - A time-series analysis would be my first priority; it has high potential to reveal new features unavailable from a 'snapshot' perspective, and thus informing a manager's decision to take risks if inconsistencies in play are the cause of lower player prices. 
  - Methods such as Latent Dirochlet Analysis (LDA) could very well identify otherwise 'hidden' features.
  - Creating a list or plot of feature importances could additionally improve opportunities for robust feature engineering.  
- - Contain data leakage. I'd scour for additional data containing aggregate values rather than a rating system. The use of rating system data across features is risky without knowing the initial metrics under FIFA's hood. 
-
+ - Contain data leakage. I'd scour for additional data containing aggregate values rather than a rating system. The use of rating system data across features is risky without knowing the initial metrics under FIFA's hood.  
+<br>
 
 References:  
 [Nielsen World Football Report](https://www.nielsen.com/uk/en/insights/reports/2018/world-football-report.html)  
