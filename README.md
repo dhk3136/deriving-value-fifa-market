@@ -1,5 +1,5 @@
 # Deriving Value from "The Beautiful Game":  
-## An EDA Addressing Optimal Pricing for Marketable FIFA players  
+## Exploiting Optimal Pricing for Marketable FIFA players  
 
 ![alt text](images/pep_on_outlandish_transfer_fees.jpg)  
 
@@ -46,6 +46,9 @@ I used this capstone as an opportunity to try different plotting libraries. I'm 
 ---
 The first thing I noted was that the two distributions from my question, Market Value and Player Rating, were vastly different. While Player Rating held a very symmetric, normal distribution, Market Value was skewed toward the extreme right side (the expensive side).  
 
+Running regression with the two features (Overall vs Market Value), the `Adj. R-squared: 0.393` demonstrates that overall ability is not a very good predictor of Market Value. From a predictive approach, this score is somewhat abysmal. On the other hand, it's a good initial indicator of the hypothesis: a player's ability is not a good indicator his monetary worth. As such, this indicates there may be room for managers to exploit the discrepancy. That is, they can mine overall value for equal or less than a player's stated overall ability.
+
+![regression](images/regression.png)
 
 ![alt text](images/overall_rating.png)  
 
