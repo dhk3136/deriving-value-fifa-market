@@ -1,5 +1,5 @@
 # Deriving Value from "The Beautiful Game":  
-## Exploiting Optimal Pricing for Marketable FIFA players  
+## Linear Regression to Exploit Optimal Pricing for Marketable FIFA players  
 
 ![alt text](images/pep_on_outlandish_transfer_fees.jpg)  
 
